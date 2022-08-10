@@ -62,6 +62,8 @@ public class EmpController {
 	public ResponseEntity<List<EmployeeModel>> king() {
 		List<EmployeeModel> resp=employee.king();
 		logger.info("EmployeeImpl entering >>>>");
+		logger.info("EmployeeImpl entering into king >>>>");
+		
 		return new ResponseEntity<List<EmployeeModel>>(resp,HttpStatus.OK);
 
 	}
