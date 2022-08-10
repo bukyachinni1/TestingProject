@@ -25,7 +25,9 @@ public class WorkerDetailsController {
 	
 	@GetMapping(value = "/details")
 	public ResponseEntity<List<EmployeeModel>> getWorkerDetails() {
-		logger.info("WorkerImpl entering >>>>");
+		logger.info("WorkerImpl entering >>>>"); 
+		logger.info("WorkerImpl entering into getWorkerDetails method >>>>"); 
+		
 		List<EmployeeModel> resp=workDetail.getWorkerDetails();
 		return new ResponseEntity<List<EmployeeModel>>(resp,HttpStatus.OK);
 
