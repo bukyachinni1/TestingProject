@@ -35,7 +35,11 @@ public class EmpController {
 		List<EmployeeModel> resp=employee.getEmpDetails();
 		logger.info("EmployeeImpl entering >>>>");
 		logger.info("EmployeeImpl entering testing >>>>");
+		logger.info("EmployeeImpl entering testing >>>>");
+		
 		return new ResponseEntity<List<EmployeeModel>>(resp,HttpStatus.OK);
+		
+		
 
 	}
 	
